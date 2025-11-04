@@ -5,7 +5,6 @@ A simple web app built usint React (vite) and Tailwind CSS, allowing project man
 the live version is below
 > https://task-manager-co6v.onrender.com
 
-
 This web app has the followig Features
 PM capabilities:
 > login
