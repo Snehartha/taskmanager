@@ -1,16 +1,33 @@
-# React + Vite
+This is a TaskManager Webapplication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web app built usint React (vite) and Tailwind CSS, allowing project managers(PMs) and employees to manage tasks effectively.
 
-Currently, two official plugins are available:
+the live version is below
+> https://task-manager-co6v.onrender.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+This web app has the followig Features
+PM capabilities:
+> login
+> Add tasks and assign to the users
+> Edit/Delete tasks and
+> can view the tasks they assigned
+> they get the notifications if the employee miss the deadline
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+User Capabilities:
+>login
+>view tasks
+>and update status of project
+>and gets the notifications if they change the status
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+How to run
+
+>Clone the github repo/Just download the project folder
+    git clone https://github.com/Snehartha/taskmanager.git
+>then navigate to the folder
+    cd taskmanger
+>then install dependencies
+    npm install
+>then run
+    npm run dev
