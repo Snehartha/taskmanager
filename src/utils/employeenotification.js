@@ -18,7 +18,7 @@ export const checkEmployeeTaskUpdates = (tasks, user) => {
     if (!myPrev.find((p) => p.id === t.id)) {
       newNotifs.push({
         id: Date.now() + Math.random(),
-        msg: `🆕 New task "${t.title}" assigned by ${t.assignedBy}`,
+        msg: ` New task "${t.title}" assigned by ${t.assignedBy}`,
       });
     }
   }
@@ -29,7 +29,7 @@ export const checkEmployeeTaskUpdates = (tasks, user) => {
     if (old && JSON.stringify(old) !== JSON.stringify(t)) {
       newNotifs.push({
         id: Date.now() + Math.random(),
-        msg: `🔄 Task "${t.title}" was updated by ${t.assignedBy}`,
+        msg: `Task "${t.title}" was updated by ${t.assignedTo}`,
       });
     }
   }

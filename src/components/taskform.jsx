@@ -76,7 +76,7 @@ export default function TaskForm({ onAdd, users }) {
       ...form,
       id: Date.now(),
       status: "Pending",
-      assignedBy: currentUser.name, // ✅ PM name saved
+      assignedBy: currentUser.name, 
     };
 
     onAdd(newTask);

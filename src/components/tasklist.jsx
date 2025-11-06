@@ -11,19 +11,16 @@ export default function TaskList({
   let visibleTasks = [];
 
   if (user.role === "pm") {
-    // 🔒 Show ONLY tasks assigned by this PM
+   
     visibleTasks = tasks.filter((t) => t.assignedBy === user.name);
 
-    // 🧩 Apply status filter (if dropdown used)
     if (statusFilter !== "all") {
       visibleTasks = visibleTasks.filter((t) => t.status === statusFilter);
     }
   } else {
-    // 👷 Employees → show only tasks assigned to them
     visibleTasks = tasks.filter((t) => t.assignedTo === user.name);
   }
 
-  // 📝 Empty states for PM and Employee
   if (visibleTasks.length === 0) {
     return (
       <div className="text-center text-xl text-gray-500 mt-10">

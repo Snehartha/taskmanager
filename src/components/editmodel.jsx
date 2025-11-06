@@ -8,7 +8,7 @@ export default function EditTaskModal({ task, onClose, onSave, users }) {
     setForm(task);
   }, [task]);
 
-  // If no task is being edited, don’t render
+ 
   if (!task) return null;
 
   const handleSubmit = (e) => {
